@@ -37,14 +37,6 @@ def move(start, end, step):
        show()
        time.sleep(step)
 
-#       print(rgb(start) + " " + rgb(end))
-#       if(start["r"] != end["r"]):
-#          print ("Red")
-#       if(start["g"] != end["g"]):
-#          print ("Green")
-#       if(start["b"] != end["b"]):
-#          print ("Blue")
-
 class Transition:
     def __init__(self, step):
         self.step = step
@@ -57,4 +49,3 @@ class Transition:
                 move(colors[n], colors[n+1], step)
             if(n == len(colors)):
                 move(colors[n], colors[n], step)
-
